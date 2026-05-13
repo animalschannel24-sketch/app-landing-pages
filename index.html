@@ -9,31 +9,77 @@
 <body>
   <div class="container">
     <div class="card">
-      <h1>Crie páginas simples para captar clientes locais</h1>
-      <p>
-        Este é o começo do MVP do seu app. A ideia aqui é permitir que negócios locais
-        criem uma página com texto, botão de WhatsApp e formulário de contato.
-      </p>
-      <a class="btn" href="#">Começar</a>
-    </div>
+      <p id="step-indicator">Etapa 1 de 3</p>
 
-    <div class="grid">
-      <div class="mini-card">
-        <h3>1. Escolha um modelo</h3>
-        <p>Selecione um template inicial para o seu tipo de negócio.</p>
+      <div id="step-1" class="step-screen active">
+        <h1>Escolha um modelo</h1>
+        <p>Selecione um formato inicial para montar sua landing page.</p>
+
+        <div class="grid">
+          <div class="mini-card">
+            <h3>Consultório</h3>
+            <p>Ideal para clínica, estética, nutrição e saúde.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>Serviço local</h3>
+            <p>Ideal para manutenção, conserto, limpeza e suporte.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>Profissional liberal</h3>
+            <p>Ideal para advogado, contador, corretor e consultor.</p>
+          </div>
+        </div>
+
+        <br />
+        <a class="btn" href="#" onclick="nextStep()">Avançar</a>
       </div>
 
-      <div class="mini-card">
-        <h3>2. Preencha os dados</h3>
-        <p>Informe nome do negócio, serviço, cidade e WhatsApp.</p>
+      <div id="step-2" class="step-screen">
+        <h1>Preencha os dados</h1>
+        <p>Informe os dados principais do negócio.</p>
+
+        <div class="form-group">
+          <label>Nome do negócio</label>
+          <input type="text" placeholder="Ex.: Clínica Boa Saúde" />
+        </div>
+
+        <div class="form-group">
+          <label>Tipo de serviço</label>
+          <input type="text" placeholder="Ex.: Nutricionista" />
+        </div>
+
+        <div class="form-group">
+          <label>Cidade / bairro</label>
+          <input type="text" placeholder="Ex.: Vila Mariana - São Paulo" />
+        </div>
+
+        <div class="form-group">
+          <label>WhatsApp</label>
+          <input type="text" placeholder="Ex.: 11999999999" />
+        </div>
+
+        <br />
+        <a class="btn" href="#" onclick="prevStep()">Voltar</a>
+        <a class="btn" href="#" onclick="nextStep()">Avançar</a>
       </div>
 
-      <div class="mini-card">
-        <h3>3. Gere sua página</h3>
-        <p>Visualize o resultado e baixe a landing page pronta.</p>
+      <div id="step-3" class="step-screen">
+        <h1>Preview inicial</h1>
+        <p>Esta etapa vai mostrar a estrutura básica da landing page gerada.</p>
+
+        <div class="mini-card">
+          <h3>Seu negócio aparecerá aqui</h3>
+          <p>Título, descrição, botão de WhatsApp e formulário entrarão nesta área.</p>
+        </div>
+
+        <br />
+        <a class="btn" href="#" onclick="prevStep()">Voltar</a>
       </div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
