@@ -67,7 +67,7 @@ function updatePreview() {
   previewName.textContent = nameInput.value || "Seu negócio aparecerá aqui";
   previewService.textContent = serviceInput.value || "Seu serviço aparecerá aqui.";
   previewLocation.textContent = locationInput.value || "Sua localização aparecerá aqui.";
-  whatsappInput.value = whatsappInput.value.replace(/\D/g, "");
+  whatsappInput.value = whatsappInput.value.replace(/\D/g, "") slice(0, 11);
   previewWhatsapp.textContent = whatsappInput.value || "Seu WhatsApp aparecerá aqui.";
 
   const cleanWhatsapp = whatsappInput.value.replace(/\D/g, "");
