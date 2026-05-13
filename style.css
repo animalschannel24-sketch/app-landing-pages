@@ -62,6 +62,43 @@ p {
   margin-bottom: 8px;
   font-size: 18px;
 }
+.step-screen {
+  display: none;
+}
+
+.step-screen.active {
+  display: block;
+}
+
+#step-indicator {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0f62fe;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
 
 @media (min-width: 768px) {
   .grid {
