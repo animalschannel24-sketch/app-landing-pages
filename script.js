@@ -31,4 +31,28 @@ function prevStep() {
 
 document.addEventListener("DOMContentLoaded", function () {
   showStep(currentStep);
+
+  const nameInput = document.getElementById("business-name");
+  const serviceInput = document.getElementById("business-service");
+  const locationInput = document.getElementById("business-location");
+  const whatsappInput = document.getElementById("business-whatsapp");
+
+  const previewName = document.getElementById("preview-name");
+  const previewService = document.getElementById("preview-service");
+  const previewLocation = document.getElementById("preview-location");
+  const previewWhatsapp = document.getElementById("preview-whatsapp");
+
+  function updatePreview() {
+    previewName.textContent = nameInput.value || "Seu negócio aparecerá aqui";
+    previewService.textContent = serviceInput.value || "Seu serviço aparecerá aqui.";
+    previewLocation.textContent = locationInput.value || "Sua localização aparecerá aqui.";
+    previewWhatsapp.textContent = whatsappInput.value || "Seu WhatsApp aparecerá aqui.";
+  }
+
+  nameInput.addEventListener("input", updatePreview);
+  serviceInput.addEventListener("input", updatePreview);
+  locationInput.addEventListener("input", updatePreview);
+  whatsappInput.addEventListener("input", updatePreview);
+
+  updatePreview();
 });
