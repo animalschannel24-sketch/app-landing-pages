@@ -145,6 +145,12 @@ function generateLandingPage() {
 }
 function copyLandingHTML() {
   const container = document.querySelector(".container");
+  const clone = container.cloneNode(true);
+
+  const copyButton = clone.querySelector('button[onclick="copyLandingHTML()"]');
+  if (copyButton) {
+    copyButton.remove();
+  }
 
   const fullHTML = `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -154,10 +160,10 @@ function copyLandingHTML() {
   <title>Landing Page</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background: #ffffff; color: #222;">
-  ${container.innerHTML}
+  ${clone.innerHTML}
 </body>
 </html>`;
-     
+
   navigator.clipboard.writeText(fullHTML)
     .then(() => {
       alert("HTML completo copiado com sucesso!");
