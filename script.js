@@ -99,7 +99,7 @@ function generateLandingPage() {
         <p style="font-size: 18px; line-height: 1.5; margin-bottom: 24px;">
           ${service} com atendimento profissional, rápido e fácil de agendar pelo WhatsApp.
         </p>
-        <a href="https://wa.me/55${whatsapp}" target="_blank" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
+        <a href="https://wa.me/55${whatsapp}" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
           Falar no WhatsApp
         </a>
       </section>
