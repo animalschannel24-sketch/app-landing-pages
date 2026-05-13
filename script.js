@@ -83,5 +83,19 @@ function updatePreview() {
   updatePreview();
 });
 function generateLandingPage() {
-  alert("Landing page gerada com sucesso!");
+  const name = document.getElementById("business-name").value;
+  const service = document.getElementById("business-service").value;
+  const location = document.getElementById("business-location").value;
+  const whatsapp = document.getElementById("business-whatsapp").value;
+
+  const container = document.querySelector(".container");
+
+  container.innerHTML = `
+    <div class="card">
+      <h1>${name}</h1>
+      <p>${service} em ${location}</p>
+      <p>Atendimento rápido, profissional e com foco no seu resultado.</p>
+      <a class="btn" href="https://wa.me/55${whatsapp}" target="_blank">Falar no WhatsApp</a>
+    </div>
+  `;
 }
