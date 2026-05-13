@@ -31,8 +31,19 @@ function nextStep() {
       alert("Preencha todos os campos antes de avançar.");
       return;
     }
+
+    document.getElementById("preview-name").textContent = nameInput.value;
+    document.getElementById("preview-service").textContent = serviceInput.value;
+    document.getElementById("preview-location").textContent = locationInput.value;
+    document.getElementById("preview-whatsapp").textContent = whatsappInput.value;
+    document.getElementById("preview-whatsapp-link").href = "https://wa.me/55" + whatsappInput.value;
   }
 
+  if (currentStep < 3) {
+    currentStep++;
+    showStep(currentStep);
+  }
+}
   if (currentStep < 3) {
     currentStep++;
     showStep(currentStep);
