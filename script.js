@@ -144,11 +144,19 @@ function generateLandingPage() {
   `;
 }
 function copyLandingHTML() {
-  const landing = document.querySelector(".container").innerHTML;
+  const container = document.querySelector(".container");
+  const clone = container.cloneNode(true);
 
-  navigator.clipboard.writeText(landing)
+  const copyButton = clone.querySelector("button");
+  if (copyButton) {
+    copyButton.remove();
+  }
+
+  const cleanHTML = clone.innerHTML;
+
+  navigator.clipboard.writeText(cleanHTML)
     .then(() => {
-      alert("HTML copiado com sucesso!");
+      alert("HTML limpo copiado com sucesso!");
     })
     .catch(() => {
       alert("Não foi possível copiar o HTML.");
