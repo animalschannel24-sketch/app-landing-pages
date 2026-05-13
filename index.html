@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Landing Pages</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #1f2937;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0f62fe;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .mini-card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .mini-card h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Crie páginas simples para captar clientes locais</h1>
+      <p>
+        Este é o começo do MVP do seu app. A ideia aqui é permitir que negócios locais
+        criem uma página com texto, botão de WhatsApp e formulário de contato.
+      </p>
+      <a class="btn" href="#">Começar</a>
+    </div>
+
+    <div class="grid">
+      <div class="mini-card">
+        <h3>1. Escolha um modelo</h3>
+        <p>Selecione um template inicial para o seu tipo de negócio.</p>
+      </div>
+
+      <div class="mini-card">
+        <h3>2. Preencha os dados</h3>
+        <p>Informe nome do negócio, serviço, cidade e WhatsApp.</p>
+      </div>
+
+      <div class="mini-card">
+        <h3>3. Gere sua página</h3>
+        <p>Visualize o resultado e baixe a landing page pronta.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
