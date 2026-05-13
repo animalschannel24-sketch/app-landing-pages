@@ -16,12 +16,28 @@ function showStep(step) {
 }
 
 function nextStep() {
+  if (currentStep === 2) {
+    const nameInput = document.getElementById("business-name");
+    const serviceInput = document.getElementById("business-service");
+    const locationInput = document.getElementById("business-location");
+    const whatsappInput = document.getElementById("business-whatsapp");
+
+    if (
+      !nameInput.value.trim() ||
+      !serviceInput.value.trim() ||
+      !locationInput.value.trim() ||
+      !whatsappInput.value.trim()
+    ) {
+      alert("Preencha todos os campos antes de avançar.");
+      return;
+    }
+  }
+
   if (currentStep < 3) {
     currentStep++;
     showStep(currentStep);
   }
 }
-
 function prevStep() {
   if (currentStep > 1) {
     currentStep--;
