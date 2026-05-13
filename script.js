@@ -91,11 +91,23 @@ function generateLandingPage() {
   const container = document.querySelector(".container");
 
   container.innerHTML = `
-    <div class="card">
-      <h1>${name}</h1>
-      <p>${service} em ${location}</p>
-      <p>Atendimento rápido, profissional e com foco no seu resultado.</p>
-      <a class="btn" href="https://wa.me/55${whatsapp}" target="_blank">Falar no WhatsApp</a>
+    <div class="card" style="padding: 32px;">
+      <p style="color: #666; margin-bottom: 10px;">Atendimento em ${location}</p>
+      <h1 style="font-size: 32px; margin-bottom: 12px;">${name}</h1>
+      <p style="font-size: 18px; margin-bottom: 20px;">
+        ${service} com atendimento profissional, rápido e fácil de agendar.
+      </p>
+
+      <div style="background: #f5f5f5; padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+        <h3 style="margin-bottom: 10px;">Por que escolher ${name}?</h3>
+        <p style="margin-bottom: 8px;">✅ Atendimento humanizado</p>
+        <p style="margin-bottom: 8px;">✅ Resposta rápida no WhatsApp</p>
+        <p style="margin-bottom: 0;">✅ Fácil localização em ${location}</p>
+      </div>
+
+      <a class="btn" href="https://wa.me/55${whatsapp}" target="_blank" style="display: inline-block; text-align: center;">
+        Falar no WhatsApp
+      </a>
     </div>
   `;
 }
