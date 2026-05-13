@@ -88,3 +88,6 @@ function updatePreview() {
 
   updatePreview();
 });
+function generateLandingPage() {
+  alert("Landing page gerada com sucesso!");
+}
