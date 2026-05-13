@@ -134,8 +134,23 @@ function generateLandingPage() {
         <a href="https://wa.me/55${whatsapp}" target="_blank" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
           Chamar no WhatsApp
         </a>
+        <br /><br />
+<button onclick="copyLandingHTML()" style="background: white; color: #111827; border: none; padding: 14px 22px; border-radius: 10px; font-weight: bold; cursor: pointer;">
+  Copiar HTML
+</button>
       </section>
 
     </div>
   `;
+}
+function copyLandingHTML() {
+  const landing = document.querySelector(".container").innerHTML;
+
+  navigator.clipboard.writeText(landing)
+    .then(() => {
+      alert("HTML copiado com sucesso!");
+    })
+    .catch(() => {
+      alert("Não foi possível copiar o HTML.");
+    });
 }
