@@ -165,41 +165,7 @@ function copyLandingHTML() {
     .catch(() => {
       alert("Não foi possível copiar o HTML.");
     });
-      <h2 style="font-size: 26px; margin-bottom: 16px;">Por que escolher ${name}?</h2>
-      <div style="display: grid; gap: 12px;">
-        <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
-          ✅ Atendimento rápido e humanizado
-        </div>
-        <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
-          ✅ Facilidade para tirar dúvidas e agendar
-        </div>
-        <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
-          ✅ Presença local em ${location}
-        </div>
-      </div>
-    </section>
-
-    <section style="background: #f8f9fb; padding: 28px 24px; border-radius: 16px; margin-bottom: 24px;">
-      <h2 style="font-size: 24px; margin-bottom: 12px;">Atendimento com mais praticidade</h2>
-      <p style="font-size: 17px; line-height: 1.6; margin-bottom: 0;">
-        Entre em contato em poucos segundos e receba informações, orientações e agendamento de forma simples, direta e sem complicação.
-      </p>
-    </section>
-
-    <section style="text-align: center; background: #111827; color: white; padding: 36px 24px; border-radius: 16px;">
-      <h2 style="font-size: 28px; margin-bottom: 12px;">Fale agora com ${name}</h2>
-      <p style="font-size: 17px; margin-bottom: 20px;">
-        Clique no botão abaixo e continue seu atendimento pelo WhatsApp.
-      </p>
-      <a href="https://wa.me/55${whatsapp}" target="_blank" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
-        Chamar no WhatsApp
-      </a>
-    </section>
-
-  </div>
-</body>
-</html>`;
-
+     
   navigator.clipboard.writeText(fullHTML)
     .then(() => {
       alert("HTML completo copiado com sucesso!");
