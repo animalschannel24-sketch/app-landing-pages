@@ -157,14 +157,6 @@ function copyLandingHTML() {
   ${container.innerHTML}
 </body>
 </html>`;
-
-  navigator.clipboard.writeText(fullHTML)
-    .then(() => {
-      alert("HTML completo copiado com sucesso!");
-    })
-    .catch(() => {
-      alert("Não foi possível copiar o HTML.");
-    });
      
   navigator.clipboard.writeText(fullHTML)
     .then(() => {
