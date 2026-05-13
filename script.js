@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
     previewService.textContent = serviceInput.value || "Seu serviço aparecerá aqui.";
     previewLocation.textContent = locationInput.value || "Sua localização aparecerá aqui.";
     previewWhatsapp.textContent = whatsappInput.value || "Seu WhatsApp aparecerá aqui.";
+    const cleanWhatsapp = whatsappInput.value.replace(/\D/g, "");
+const whatsappLink = document.getElementById("preview-whatsapp-link");
+whatsappLink.href = cleanWhatsapp ? `https://wa.me/55${cleanWhatsapp}` : "#";
   }
 
   nameInput.addEventListener("input", updatePreview);
