@@ -144,19 +144,71 @@ function generateLandingPage() {
   `;
 }
 function copyLandingHTML() {
-  const container = document.querySelector(".container");
-  const clone = container.cloneNode(true);
+  const name = document.getElementById("business-name").value;
+  const service = document.getElementById("business-service").value;
+  const location = document.getElementById("business-location").value;
+  const whatsapp = document.getElementById("business-whatsapp").value;
 
-  const copyButton = clone.querySelector("button");
-  if (copyButton) {
-    copyButton.remove();
-  }
+  const fullHTML = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${name}</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background: #ffffff; color: #222;">
+  <div style="max-width: 960px; margin: 0 auto; padding: 24px;">
 
-  const cleanHTML = clone.innerHTML;
+    <section style="background: #f8f9fb; padding: 40px 24px; border-radius: 16px; margin-bottom: 24px;">
+      <p style="color: #666; margin-bottom: 10px;">Atendimento em ${location}</p>
+      <h1 style="font-size: 36px; margin-bottom: 16px;">${name}</h1>
+      <p style="font-size: 18px; line-height: 1.5; margin-bottom: 24px;">
+        ${service} com atendimento profissional, rápido e fácil de agendar pelo WhatsApp.
+      </p>
+      <a href="https://wa.me/55${whatsapp}" target="_blank" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
+        Falar no WhatsApp
+      </a>
+    </section>
 
-  navigator.clipboard.writeText(cleanHTML)
+    <section style="margin-bottom: 24px;">
+      <h2 style="font-size: 26px; margin-bottom: 16px;">Por que escolher ${name}?</h2>
+      <div style="display: grid; gap: 12px;">
+        <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
+          ✅ Atendimento rápido e humanizado
+        </div>
+        <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
+          ✅ Facilidade para tirar dúvidas e agendar
+        </div>
+        <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
+          ✅ Presença local em ${location}
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #f8f9fb; padding: 28px 24px; border-radius: 16px; margin-bottom: 24px;">
+      <h2 style="font-size: 24px; margin-bottom: 12px;">Atendimento com mais praticidade</h2>
+      <p style="font-size: 17px; line-height: 1.6; margin-bottom: 0;">
+        Entre em contato em poucos segundos e receba informações, orientações e agendamento de forma simples, direta e sem complicação.
+      </p>
+    </section>
+
+    <section style="text-align: center; background: #111827; color: white; padding: 36px 24px; border-radius: 16px;">
+      <h2 style="font-size: 28px; margin-bottom: 12px;">Fale agora com ${name}</h2>
+      <p style="font-size: 17px; margin-bottom: 20px;">
+        Clique no botão abaixo e continue seu atendimento pelo WhatsApp.
+      </p>
+      <a href="https://wa.me/55${whatsapp}" target="_blank" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
+        Chamar no WhatsApp
+      </a>
+    </section>
+
+  </div>
+</body>
+</html>`;
+
+  navigator.clipboard.writeText(fullHTML)
     .then(() => {
-      alert("HTML limpo copiado com sucesso!");
+      alert("HTML completo copiado com sucesso!");
     })
     .catch(() => {
       alert("Não foi possível copiar o HTML.");
