@@ -86,7 +86,7 @@ function generateLandingPage() {
   const name = document.getElementById("business-name").value;
   const service = document.getElementById("business-service").value;
   const location = document.getElementById("business-location").value;
-  const whatsapp = document.getElementById("business-whatsapp").value;
+  const whatsapp = document.getElementById("business-whatsapp").value.replace(/\D/g, "");
 
   const container = document.querySelector(".container");
 
