@@ -42,15 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const previewLocation = document.getElementById("preview-location");
   const previewWhatsapp = document.getElementById("preview-whatsapp");
 
-  function updatePreview() {
-    previewName.textContent = nameInput.value || "Seu negócio aparecerá aqui";
-    previewService.textContent = serviceInput.value || "Seu serviço aparecerá aqui.";
-    previewLocation.textContent = locationInput.value || "Sua localização aparecerá aqui.";
-    previewWhatsapp.textContent = whatsappInput.value || "Seu WhatsApp aparecerá aqui.";
-    const cleanWhatsapp = whatsappInput.value.replace(/\D/g, "");
-const whatsappLink = document.getElementById("preview-whatsapp-link");
-whatsappLink.href = cleanWhatsapp ? `https://wa.me/55${cleanWhatsapp}` : "#";
-  }
+function updatePreview() {
+  previewName.textContent = nameInput.value || "Seu negócio aparecerá aqui";
+  previewService.textContent = serviceInput.value || "Seu serviço aparecerá aqui.";
+  previewLocation.textContent = locationInput.value || "Sua localização aparecerá aqui.";
+  previewWhatsapp.textContent = whatsappInput.value || "Seu WhatsApp aparecerá aqui.";
+
+  const cleanWhatsapp = whatsappInput.value.replace(/\D/g, "");
+  const whatsappLink = document.getElementById("preview-whatsapp-link");
+  whatsappLink.href = cleanWhatsapp ? `https://wa.me/55${cleanWhatsapp}` : "#";
+}
 
   nameInput.addEventListener("input", updatePreview);
   serviceInput.addEventListener("input", updatePreview);
