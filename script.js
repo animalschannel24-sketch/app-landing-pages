@@ -165,9 +165,6 @@ function copyLandingHTML() {
     .catch(() => {
       alert("Não foi possível copiar o HTML.");
     });
-}    </section>
-
-    <section style="margin-bottom: 24px;">
       <h2 style="font-size: 26px; margin-bottom: 16px;">Por que escolher ${name}?</h2>
       <div style="display: grid; gap: 12px;">
         <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
