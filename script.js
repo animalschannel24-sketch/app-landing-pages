@@ -42,13 +42,7 @@ function nextStep() {
   if (currentStep < 3) {
     currentStep++;
     showStep(currentStep);
-  }
-}
-  if (currentStep < 3) {
-    currentStep++;
-    showStep(currentStep);
-  }
-}
+  }}
 function prevStep() {
   if (currentStep > 1) {
     currentStep--;
