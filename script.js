@@ -87,6 +87,11 @@ async function generateLandingPage() {
   const service = document.getElementById("business-service").value.trim();
   const location = document.getElementById("business-location").value.trim();
   const whatsapp = document.getElementById("business-whatsapp").value.replace(/\D/g, "").slice(0, 11);
+  const params = new URLSearchParams(window.location.search);
+const utm_source = params.get("utm_source") || "";
+const utm_medium = params.get("utm_medium") || "";
+const utm_campaign = params.get("utm_campaign") || "";
+const origem = utm_source || "direto";
 
   if (!name || !service || !location || !whatsapp) {
     alert("Preencha todos os campos.");
@@ -103,7 +108,11 @@ async function generateLandingPage() {
         name,
         service,
         location,
-        whatsapp
+        whatsapp,
+        origem,
+        utm_source,
+  utm_medium,
+  utm_campaign
       })
     });
 
