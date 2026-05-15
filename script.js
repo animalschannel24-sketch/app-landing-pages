@@ -132,7 +132,7 @@ const origem = utm_source || "direto";
       
       <h1 style="font-size: 36px; margin-bottom: 16px;">${name}</h1>
       <p style="font-size: 18px; line-height: 1.5; margin-bottom: 24px;">
-        Organize pendências fiscais entre escritório e cliente com mais clareza, prioridade e acompanhamento.
+        Entenda o que exige atenção agora, alinhe prioridades e organize o próximo passo entre escritório e cliente.
       </p>
       <a href="https://wa.me/55${whatsapp}" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
         Falar no WhatsApp
@@ -140,34 +140,34 @@ const origem = utm_source || "direto";
     </section>
 
     <section style="margin-bottom: 24px;">
-      <h2 style="font-size: 26px; margin-bottom: 16px;">Como o ${name} ajuda</h2>
+      <h2 style="font-size: 26px; margin-bottom: 16px;">Onde o ${name} pode ajudar agora</h2>
       <div style="display: grid; gap: 12px;">
         <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
-          ✅ Mais clareza sobre pendências e prioridades
+          ✅ Entender com clareza o que exige atenção agora
         </div>
         <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
-          ✅ Comunicação mais organizada entre escritório e cliente
+          ✅ Alinhar prioridades entre escritório e cliente
         </div>
         <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
-          ✅ Atendimento direto pelo WhatsApp, de forma prática e objetiva
+          ✅ Seguir para o próximo passo com menos ruído
         </div>
       </div>
     </section>
 
     <section style="background: #f8f9fb; padding: 28px 24px; border-radius: 16px; margin-bottom: 24px;">
-      <h2 style="font-size: 24px; margin-bottom: 12px;">Atendimento mais simples e objetivo</h2>
+      <h2 style="font-size: 24px; margin-bottom: 12px;">O que precisa de atenção agora</h2>
       <p style="font-size: 17px; line-height: 1.6; margin-bottom: 0;">
-        Entre em contato para entender melhor suas pendências, organizar o próximo passo e continuar o atendimento com mais segurança.
+        Entre em contato para entender o que exige atenção agora, alinhar prioridades e seguir com mais segurança entre escritório e cliente.
       </p>
     </section>
 
     <section style="text-align: center; background: #111827; color: white; padding: 36px 24px; border-radius: 16px;">
-      <h2 style="font-size: 28px; margin-bottom: 12px;">Fale agora com ${name}</h2>
+      <h2 style="font-size: 28px; margin-bottom: 12px;">Organize o próximo passo com ${name}</h2>
       <p style="font-size: 17px; margin-bottom: 20px;">
-        Clique no botão abaixo e continue seu atendimento pelo WhatsApp.
+        Clique no botão abaixo para alinhar o que precisa de atenção agora e seguir com mais clareza no atendimento.
       </p>
       <a href="https://wa.me/55${whatsapp}" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
-        Chamar no WhatsApp
+        Falar no WhatsApp
       </a>
       
     </section>
