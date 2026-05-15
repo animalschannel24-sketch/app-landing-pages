@@ -131,7 +131,7 @@ const origem = utm_source || "direto";
   <div style="max-width: 960px; margin: 0 auto; padding: 24px; font-family: Arial, sans-serif; color: #222;">
     
     <section style="background: #f8f9fb; padding: 40px 24px; border-radius: 16px; margin-bottom: 24px;">
-      <p style="color: #666; margin-bottom: 10px;">Atendimento em ${location}</p>
+      
       <h1 style="font-size: 36px; margin-bottom: 16px;">${name}</h1>
       <p style="font-size: 18px; line-height: 1.5; margin-bottom: 24px;">
         Organize pendências fiscais entre escritório e cliente com mais clareza, prioridade e acompanhamento.
@@ -151,7 +151,7 @@ const origem = utm_source || "direto";
           ✅ Comunicação mais organizada entre escritório e cliente
         </div>
         <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
-          ✅ Atendimento direto pelo WhatsApp em ${location}
+          ✅ Atendimento direto pelo WhatsApp, de forma prática e objetiva
         </div>
       </div>
     </section>
@@ -171,10 +171,7 @@ const origem = utm_source || "direto";
       <a href="https://wa.me/55${whatsapp}" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 14px 22px; border-radius: 10px; font-weight: bold;">
         Chamar no WhatsApp
       </a>
-      <br /><br />
-      <button onclick="copyLandingHTML()" style="background: white; color: #111827; border: none; padding: 14px 22px; border-radius: 10px; font-weight: bold; cursor: pointer;">
-        Copiar HTML
-      </button>
+      
     </section>
   </div>
 `;
