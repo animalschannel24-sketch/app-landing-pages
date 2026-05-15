@@ -140,7 +140,7 @@ const origem = utm_source || "direto";
     </section>
 
     <section style="margin-bottom: 24px;">
-      <h2 style="font-size: 26px; margin-bottom: 16px;">Onde o ${name} pode ajudar agora</h2>
+      <h2 style="font-size: 26px; margin-bottom: 16px;">Onde podemos ajudar agora</h2>
       <div style="display: grid; gap: 12px;">
         <div style="background: #ffffff; border: 1px solid #e5e7eb; padding: 18px; border-radius: 12px;">
           ✅ Entender com clareza o que exige atenção agora
@@ -162,7 +162,7 @@ const origem = utm_source || "direto";
     </section>
 
     <section style="text-align: center; background: #111827; color: white; padding: 36px 24px; border-radius: 16px;">
-      <h2 style="font-size: 28px; margin-bottom: 12px;">Organize o próximo passo com ${name}</h2>
+      <h2 style="font-size: 28px; margin-bottom: 12px;">Organize o próximo passo agora</h2>
       <p style="font-size: 17px; margin-bottom: 20px;">
         Clique no botão abaixo para alinhar o que precisa de atenção agora e seguir com mais clareza no atendimento.
       </p>
