@@ -123,9 +123,7 @@ const origem = utm_source || "direto";
       return;
     }
 
-    alert("Lead enviado com sucesso!");
-
-    const container = document.querySelector(".container");
+      const container = document.querySelector(".container");
 
     container.innerHTML = `
   <div style="max-width: 960px; margin: 0 auto; padding: 24px; font-family: Arial, sans-serif; color: #222;">
